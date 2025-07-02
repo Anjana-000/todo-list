@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #be7aee;
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+main {
+  border-radius: 6px;
+  background: #27005D;
+  margin: 50px auto;
+  width: 400px;
+  padding: 32px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg,
+      rgba(255, 118, 20, 1) 0%,
+      rgba(255, 84, 17, 1) 100%);
+  padding: 8px 16px;
+  border-radius: 6px;
+  width: 350px;
+}
+
+.card:nth-child(4n + 1) {
+  background: linear-gradient(90deg,
+      rgba(93, 12, 255, 1) 0%,
+      rgba(155, 0, 250, 1) 100%);
+}
+
+.card:nth-child(4n + 2) {
+  background: linear-gradient(90deg,
+      rgba(255, 12, 241, 1) 0%,
+      rgba(250, 0, 135, 1) 100%);
+}
+
+.card:nth-child(4n + 3) {
+  background: linear-gradient(90deg,
+      rgba(20, 159, 255, 1) 0%,
+      rgba(17, 122, 255, 1) 100%);
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  height: fit-content;
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+.task-input {
+  border: none;
+  border-radius: 6px;
+  padding: 16px;
+}
+.navbar a{
+  color: white;
+  background-color: #27005D;
+  padding: 8px 16px;
+  margin: 8px;
+  border-radius:6px ;
+}
