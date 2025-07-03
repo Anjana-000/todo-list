@@ -13,7 +13,7 @@ const Tasks = () => {
       task_name: newTask
 
     };
-    const response = await fetch("https://todo-backend-ke6w.onrender.com", {
+    const response = await fetch("https://todo-backend-ke6w.onrender.com/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -31,7 +31,7 @@ const Tasks = () => {
   }
 
   const deleleTaskHandler = async (taskId) => {
-    const response = await fetch("https://todo-backend-ke6w.onrender.com" + taskId, {
+    const response = await fetch("https://todo-backend-ke6w.onrender.com/" + taskId, {
       method: "DELETE"
     })
     if (response.status === 200) {
